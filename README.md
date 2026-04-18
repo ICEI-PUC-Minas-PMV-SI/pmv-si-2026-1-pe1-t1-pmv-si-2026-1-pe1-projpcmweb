@@ -10,7 +10,7 @@ O projeto consiste no desenvolvimento de um sistema web completo voltado para a 
 
 ## Integrantes
 
-* Aline Cristina De Castro Luna
+* Aline Cristina De Castro Luna Costa
 * Davi Augusto Silva Chaves 
 * Joao Francisco Giovannini de Almeida Cunha
 * Vivian Nascimento Silva Amorim
