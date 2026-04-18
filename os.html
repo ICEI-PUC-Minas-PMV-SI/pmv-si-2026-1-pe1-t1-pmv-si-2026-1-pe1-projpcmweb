@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordem de Serviço</title>
+</head>
+<body>
+
+    <h1>Ordem de Serviço</h1>
+
+    <br>
+
+    <label for="maquina">Máquina</label>
+    <input type="text" id="maquina" name="maquina" size="30">
+
+    <br><br>
+
+    <label for="tecnico">Técnico</label>
+    <input type="text" id="tecnico" name="tecnico" size="30">
+
+    <br><br>
+
+    <label for="status">Status</label>
+    <select id="status" name="status">
+        <option value="">Selecione</option>
+        <option value="em_andamento">Em andamento</option>
+        <option value="pausado">Pausado</option>
+        <option value="concluido">Concluído</option>
+    </select>
+
+    <br><br><br>
+
+    <label for="descricao">Descrição do Problema</label>
+    <br>
+    <textarea id="descricao" name="descricao" rows="5" cols="50"></textarea>
+
+    <br><br>
+
+    <label for="pecas">Peças utilizadas</label>
+    <br>
+    <textarea id="pecas" name="pecas" rows="4" cols="50"></textarea>
+
+    <br><br><br>
+
+    <label for="data_inicio">Data de Início:</label>
+    <input type="date" id="data_inicio" name="data_inicio">
+
+    <br><br>
+
+    <label for="data_conclusao">Data de Conclusão</label>
+    <input type="date" id="data_conclusao" name="data_conclusao">
+
+    <br><br><br>
+
+    <button type="submit">Salvar</button>
+
+</body>
+</html>
