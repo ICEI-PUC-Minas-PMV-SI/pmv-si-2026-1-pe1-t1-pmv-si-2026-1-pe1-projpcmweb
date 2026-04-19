@@ -14,7 +14,7 @@ O projeto consiste no desenvolvimento de um sistema web completo voltado para a 
 * Davi Augusto Silva Chaves 
 * Joao Francisco Giovannini de Almeida Cunha
 * Vivian Nascimento Silva Amorim
-* Vivian Nascimento Silva Amorim
+* Vitor Gabriel Nascimento Jerônimo
 
 
 ## Orientador
