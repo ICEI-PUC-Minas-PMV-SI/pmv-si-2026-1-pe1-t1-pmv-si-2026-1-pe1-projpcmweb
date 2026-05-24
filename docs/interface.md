@@ -2,6 +2,7 @@
 # Projeto de Interface
 
 Login (acesso de usuário)
+
 A tela de login tem como objetivo permitir o acesso seguro dos usuários ao sistema, por meio da autenticação com nome de usuário e senha. Ela funciona como a porta de entrada da aplicação, garantindo que apenas usuários autorizados tenham acesso às funcionalidades disponíveis.
 Além disso, a tela disponibiliza a opção de recuperação de senha, permitindo que o usuário redefina seu acesso em caso de esquecimento, contribuindo para a usabilidade e continuidade do uso do sistema.
 
