@@ -1,36 +1,70 @@
 # Template padrão do site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O sistema **PCMWeb** utiliza um template padrão desenvolvido em **HTML5, CSS3 e JavaScript**, responsável por manter a identidade visual e a padronização entre todas as telas do sistema. O layout foi projetado com foco em sistemas industriais e plataformas corporativas de gestão operacional.
 
-Explique as guias de estilo utilizadas no seu projeto.
+O template padrão será utilizado em:
+- Gestão de Ativos;
+- PCM (Planejamento e Controle de Manutenção);
+- Ordens de Serviço;
+- Estoque;
+- Dashboard;
+- Preventivas.
+
+A estrutura principal do sistema é composta por:
+- Sidebar lateral fixa;
+- Topbar superior;
+- Área central de conteúdo;
+- Cards operacionais;
+- Tabelas de dados;
+- Modais e formulários.
+
+O sistema foi desenvolvido utilizando:
+- Flexbox;
+- CSS Grid Layout;
+- Estruturas reutilizáveis;
+- Responsividade para diferentes resoluções.
 
 ## Design
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+O design do sistema foi inspirado em softwares corporativos de manutenção industrial, priorizando:
+- clareza visual;
+- rápida navegação;
+- organização operacional;
+- padronização dos componentes.
 
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+A paleta de cores foi definida com foco em ambientes industriais e dashboards operacionais.
 
+| Cor | Código HEX | Aplicação |
+|---|---|---|
+| Azul principal | #2563eb | Botões, indicadores e elementos ativos |
+| Azul escuro | #0f172a | Fundo principal |
+| Cinza escuro | #1d1d1d | Sidebar e Topbar |
+| Branco | #ffffff | Cards e áreas de conteúdo |
+| Vermelho | #dc2626 | Alertas críticos |
+| Verde | #16a34a | Status positivos |
+| Amarelo | #d97706 | Alertas de atenção |
+| Cinza claro | #e5e7eb | Bordas e divisões |
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+O sistema utiliza a fonte:
+
+css
+font-family: Arial, sans-serif;
 
 
 ## Iconografia
+A iconografia do sistema foi desenvolvida utilizando a biblioteca **Font Awesome**, permitindo padronização visual e melhor experiência de navegação.
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+Os ícones representam:
+- Dashboard;
+- Gestão de ativos;
+- PCM;
+- Estoque;
+- Ordens de serviço;
+- Preventivas.
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
 
-
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
