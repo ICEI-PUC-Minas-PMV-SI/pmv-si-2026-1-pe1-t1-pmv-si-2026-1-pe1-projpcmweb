@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        PCMWeb - Gestão de Estoque
+    </title>
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="Estoque.css"
+    >
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =====================================================
+             SIDEBAR
+        ===================================================== -->
+
+        <aside class="sidebar">
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <img src="logopcm.png" alt="PCMWeb">
+
+            </div>
+
+            <!-- MENU -->
+
+            <nav class="menu">
+
+                <!-- DASHBOARD -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span class="tooltip">
+                        Dashboard
+                    </span>
+
+                </div>
+
+                <!-- GESTÃO DE ATIVOS -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-industry"></i>
+
+                    <span class="tooltip">
+                        Gestão de Ativos
+                    </span>
+
+                </div>
+
+                <!-- ORDEM DE SERVIÇO -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-clipboard-list"></i>
+
+                    <span class="tooltip">
+                        Ordem de Serviço
+                    </span>
+
+                </div>
+
+                <!-- PREVENTIVAS -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span class="tooltip">
+                        Preventivas
+                    </span>
+
+                </div>
+
+                <!-- ESTOQUE -->
+
+                <div class="menu-item active">
+
+                    <i class="fa-solid fa-boxes-stacked"></i>
+
+                    <span class="tooltip">
+                        Estoque
+                    </span>
+
+                </div>
+
+                <!-- PCM -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                    <span class="tooltip">
+                        PCM
+                    </span>
+
+                </div>
+
+                <!-- TREINAMENTO -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <span class="tooltip">
+                        Treinamento
+                    </span>
+
+                </div>
+
+                <!-- LOGIN -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-user-lock"></i>
+
+                    <span class="tooltip">
+                        Login
+                    </span>
+
+                </div>
+
+                <!-- COMPRAS -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span class="tooltip">
+                        Compras
+                    </span>
+
+                </div>
+
+                <!-- FINANCEIRO -->
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-money-bill-wave"></i>
+
+                    <span class="tooltip">
+                        Financeiro
+                    </span>
+
+                </div>
+
+            </nav>
+
+        </aside>
+
+        <!-- =====================================================
+             MAIN CONTENT
+        ===================================================== -->
+
+        <main class="main-content">
+
+            <!-- TOPBAR -->
+
+            <header class="topbar">
+
+                <h1>
+                    Gestão de Estoque
+                </h1>
+
+                <button id="btnAdicionar">
+
+                    + Adicionar Peça
+
+                </button>
+
+            </header>
+
+            <!-- CONTENT AREA -->
+
+            <section class="content-area">
+
+                <div class="card">
+
+                    <!-- PESQUISA -->
+
+                    <input
+                        type="text"
+                        id="pesquisa"
+                        class="search"
+                        placeholder="Localizar peça no estoque"
+                    >
+
+                    <!-- CONTADOR -->
+
+                    <h3 class="contador">
+
+                        Total de peças:
+                        <span id="totalPecas">
+                            4
+                        </span>
+
+                    </h3>
+
+                    <!-- TABELA -->
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>ID</th>
+
+                                    <th>Item</th>
+
+                                    <th>Quantidade</th>
+
+                                    <th>Estoque mínimo</th>
+
+                                    <th>Status</th>
+
+                                    <th>Ações</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="tbody">
+
+                                <tr>
+
+                                    <td>323</td>
+
+                                    <td>Rolamento</td>
+
+                                    <td>3</td>
+
+                                    <td>10</td>
+
+                                    <td>
+                                        <span class="low">
+                                            Estoque baixo
+                                        </span>
+                                    </td>
+
+                                    <td class="acoes">
+
+                                        <button class="menos-btn">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+
+                                        <button class="mais-btn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>543</td>
+
+                                    <td>Graxa</td>
+
+                                    <td>28</td>
+
+                                    <td>25</td>
+
+                                    <td>
+                                        <span class="ok">
+                                            Em estoque
+                                        </span>
+                                    </td>
+
+                                    <td class="acoes">
+
+                                        <button class="menos-btn">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+
+                                        <button class="mais-btn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>752</td>
+
+                                    <td>Manivela</td>
+
+                                    <td>9</td>
+
+                                    <td>15</td>
+
+                                    <td>
+                                        <span class="low">
+                                            Estoque baixo
+                                        </span>
+                                    </td>
+
+                                    <td class="acoes">
+
+                                        <button class="menos-btn">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+
+                                        <button class="mais-btn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- =====================================================
+         MODAL
+    ===================================================== -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-box">
+
+            <h2>
+                Adicionar Peça
+            </h2>
+
+            <input
+                type="text"
+                id="idPeca"
+                placeholder="ID"
+            >
+
+            <input
+                type="text"
+                id="nomePeca"
+                placeholder="Nome da peça"
+            >
+
+            <input
+                type="number"
+                id="qtdPeca"
+                placeholder="Quantidade"
+            >
+
+            <input
+                type="number"
+                id="minPeca"
+                placeholder="Estoque mínimo"
+            >
+
+            <div class="modal-buttons">
+
+                <button
+                    class="cancel-btn"
+                    id="fecharModal"
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    class="save-btn"
+                    id="salvarPeca"
+                >
+                    Salvar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="Estoque.js"></script>
+
+</body>
+</html>
