@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        PCMWeb - Planejamento e controle de manutenção
+    </title>
+
+    <!-- CSS -->
+
+   <link
+    rel="stylesheet"
+    href="planejamento.css"
+    >
+
+    <!-- FONT AWESOME -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+</head>
+
+<body>
+<nav class="menu">
+        
+    <div class="app">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <img src="logopcmw.png">
+
+            </div>
+            <nav class="menu">
+
+    <!-- =====================================================
+         DASHBOARD OPERACIONAL
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span class="tooltip">
+            Dashboard Operacional
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         GESTÃO DE ATIVOS
+    ===================================================== -->
+
+    <div class="menu-item active">
+
+        <i class="fa-solid fa-industry"></i>
+
+        <span class="tooltip">
+            Gestão de Ativos
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         ORDEM DE SERVIÇO
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-clipboard-list"></i>
+
+        <span class="tooltip">
+            Ordem de Serviço
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         MANUTENÇÃO PREVENTIVA
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-calendar-check"></i>
+
+        <span class="tooltip">
+            Plano Preventivo
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         ESTOQUE E PEÇAS
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-boxes-stacked"></i>
+
+        <span class="tooltip">
+            Gestão de Estoque
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         PCM
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+
+        <span class="tooltip">
+            PCM
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         TREINAMENTO
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-graduation-cap"></i>
+
+        <span class="tooltip">
+            Treinamento
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         LOGIN
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-user-lock"></i>
+
+        <span class="tooltip">
+            Login
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         COMPRAS
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span class="tooltip">
+            Compras
+        </span>
+
+    </div>
+
+    <!-- =====================================================
+         FINANCEIRO
+    ===================================================== -->
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-money-bill-wave"></i>
+
+        <span class="tooltip">
+            Financeiro
+        </span>
+
+    </div>
+
+</nav>
+
+        </aside>
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <h1>
+                    Planejamento e Controle de Manutenção
+                </h1>
+
+                <button onclick="abrirModal()">
+
+                    + Adicionar Plano
+
+                </button>
+
+            </header>
+
+
+        <!-- KPIS -->
+        <section class="kpi-grid">
+
+            <div class="kpi-card">
+
+                <h2>92%</h2>
+
+                <p>Disponibilidade</p>
+
+            </div>
+
+            <div class="kpi-card warning">
+
+                <h2>15</h2>
+
+                <p>Preventivas Hoje</p>
+
+            </div>
+
+            <div class="kpi-card danger">
+
+                <h2>05</h2>
+
+                <p>OS Críticas</p>
+
+            </div>
+
+            <div class="kpi-card success">
+
+                <h2>120h</h2>
+
+                <p>TM/ Falhas</p>
+
+            </div>
+
+        </section>
+
+        <!-- CONTENT -->
+        <section class="content-area">
+
+            <!-- SAÚDE OPERACIONAL -->
+            <div class="card saude-card">
+
+                <h3>
+                    Saúde Operacional
+                </h3>
+
+                <!-- ALERTA -->
+
+                <div class="alerta danger-box">
+
+                    <div>
+
+                        <strong>
+                            Forno Industrial
+                        </strong>
+
+                        <p>
+                            Temperatura acima do limite.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                </div>
+
+                <!-- ALERTA -->
+
+                <div class="alerta warning-box">
+
+                    <div>
+
+                        <strong>
+                            Gerador Diesel
+                        </strong>
+
+                        <p>
+                            Preventiva em 2 dias.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <!-- ALERTA -->
+
+                <div class="alerta success-box">
+
+                    <div>
+
+                        <strong>
+                            Prensa Hidráulica
+                        </strong>
+
+                        <p>
+                            Operação normal.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+                <!-- RESUMO -->
+
+                <div class="resumo-pcm">
+
+            
+
+                </div>
+
+            </div>
+
+            <!-- TABELA -->
+            <div class="card">
+
+                <!-- TABS -->
+
+                <div class="tabs">
+
+                    <div class="tab active">
+                        Planejamento
+                    </div>
+
+                    <div class="tab">
+                        Técnicos
+                    </div>
+
+                    <div class="tab">
+                        Indicadores
+                    </div>
+
+                </div>
+
+                <!-- TABELA -->
+
+                <table>
+
+                    <tr>
+
+                        <th>Equipamento</th>
+
+                        <th>Técnico</th>
+
+                        <th>Prioridade</th>
+
+                        <th>Status</th>
+
+                        <th>Horas</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Forno Industrial</td>
+
+                        <td>João</td>
+
+                        <td>
+                            Alta
+                        </td>
+
+                        <td>
+                            <span class="status ativo">
+                                Em execução
+                            </span>
+                        </td>
+
+                        <td>4h</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Gerador Diesel</td>
+
+                        <td>Carlos</td>
+
+                        <td>
+                            Média
+                        </td>
+
+                        <td>
+                            <span class="status pendente">
+                                Pendente
+                            </span>
+                        </td>
+
+                        <td>2h</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Torno Mecânico</td>
+
+                        <td>Ana</td>
+
+                        <td>
+                            Baixa
+                        </td>
+
+                        <td>
+                            <span class="status concluido">
+                                Concluído
+                            </span>
+                        </td>
+
+                        <td>1h</td>
+
+                    </tr>
+
+                </table>
+
+               
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+
+    <div class="modal-box">
+
+        <h2>
+            Novo Plano PCM
+        </h2>
+
+        <input
+            type="text"
+            placeholder="Nome do plano"
+        >
+
+        <input
+            type="text"
+            placeholder="Equipamento"
+        >
+
+        <input
+            type="text"
+            placeholder="Responsável"
+        >
+
+        <button onclick="fecharModal()">
+
+            Salvar Plano
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="planejamento.js"></script>
+
+</body>
+</html>
