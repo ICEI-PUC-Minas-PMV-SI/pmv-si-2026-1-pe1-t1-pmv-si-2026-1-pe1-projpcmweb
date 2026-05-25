@@ -18,4 +18,5 @@ O site em HTML/CSS/JS é um projeto estático, logo pode ser executado diretamen
 - Tela de Planejamento
 - Tela de Treinamento
 - Tela de Ordem de Serviço
+- Tela de Gestão de Ativos
 - Estrutura HTML e estilização CSS padronizada das telas
