@@ -1,5 +1,3 @@
-# Instruções de utilização
-
 ## Instalação do Site
 
 O site em HTML/CSS/JS é um projeto estático, logo pode ser executado diretamente pelo navegador através dos arquivos `.html`.
