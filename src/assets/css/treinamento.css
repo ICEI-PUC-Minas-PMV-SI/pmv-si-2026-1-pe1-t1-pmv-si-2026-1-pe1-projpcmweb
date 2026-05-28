@@ -2,13 +2,15 @@
 /* CARD */
 
 .card-dark{
-    background: #1e293b;
+    background: #f8fafc;
 
     border-radius: 16px;
 
     padding: 30px;
 
     box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+
+    color: #000000;
 }
 
 /* VIDEO TITLE */
@@ -21,7 +23,7 @@
 
     margin-bottom: 35px;
 
-    color: #dbeafe;
+    color: #000000;
 }
 
 /* VIDEO CONTAINER */
