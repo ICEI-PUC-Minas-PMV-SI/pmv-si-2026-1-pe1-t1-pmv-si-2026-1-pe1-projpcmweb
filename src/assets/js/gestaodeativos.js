@@ -31,13 +31,38 @@ function salvarAtivo(){
         return;
     }
 
-    alert(
-        "Ativo cadastrado com sucesso!\n\n"
-        + "Nome: " + nome
-        + "\nCódigo: " + codigo
+    let novoAtivo = {
+
+        codigo: codigo,
+
+        nome: nome
+    };
+
+    let ativos =
+        JSON.parse(
+            localStorage.getItem("ativos")
+        ) || [];
+
+    ativos.push(novoAtivo);
+
+    localStorage.setItem(
+        "ativos",
+        JSON.stringify(ativos)
     );
 
+    alert("Ativo cadastrado com sucesso!");
+
     fecharModal();
+}
+
+function listarAtivos(){
+
+    let ativos =
+        JSON.parse(
+            localStorage.getItem("ativos")
+        ) || [];
+
+    console.log(ativos);
 }
 
 function mostrarDados(){
@@ -139,4 +164,8 @@ function mostrarDocumentos(){
 
         </table>
     `;
+}
+
+function logout() {
+    window.location.href = "login.html";
 }
