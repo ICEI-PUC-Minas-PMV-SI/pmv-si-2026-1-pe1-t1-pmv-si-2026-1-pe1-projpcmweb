@@ -35,9 +35,7 @@ body{
 }
 .logo img{
     width: 42px;
-
     height: 42px;
-
     object-fit: contain;
 }
 
@@ -46,7 +44,8 @@ body{
 .menu{
     display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:18px;
+    flex:1;
 }
 
 .menu-item{
@@ -73,6 +72,11 @@ body{
 
 .menu-item.active{
     background:#2563eb;
+}
+
+.logout{
+    margin-top:auto;
+    margin-bottom:20px;
 }
 
 /* TOOLTIP */
@@ -103,7 +107,6 @@ body{
     flex-direction:column;
 }
 
-/* TOPBAR */
 
 /* =========================================
    TOPBAR
@@ -376,7 +379,8 @@ td{
     padding:20px;
 }
 
-.modal-box input{
+.modal-box input,
+.modal-box select{
     width:100%;
     padding:10px;
     margin-bottom:12px;
@@ -391,5 +395,15 @@ td{
     color:white;
     border:none;
     border-radius:10px;
+}
+
+.delete-btn{
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:8px;
+    background:#fee2e2;
+    color:#dc2626;
+    cursor:pointer;
 }
 
