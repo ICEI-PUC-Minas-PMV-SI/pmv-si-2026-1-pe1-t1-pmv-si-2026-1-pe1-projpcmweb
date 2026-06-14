@@ -279,16 +279,13 @@ function formatarData(data){
 GRÁFICO
 ===================================================== */
 
-const ctx =
-document.getElementById("graficoCompras");
+const ctx = document.getElementById("graficoCompras");
 
 const grafico = new Chart(ctx, {
+    type: "bar",
 
-    type:"bar",
-
-    data:{
-
-        labels:[
+    data: {
+        labels: [
             "Jan",
             "Fev",
             "Mar",
@@ -303,47 +300,68 @@ const grafico = new Chart(ctx, {
             "Dez"
         ],
 
-        datasets:[{
+        datasets: [{
+            label: "Gastos Mensais",
+            data: new Array(12).fill(0),
 
-            label:"Gastos Mensais",
+            /* Azul do padrão */
+            backgroundColor: "#2563eb",
 
-            data:new Array(12).fill(0),
+            /* Borda */
+            borderColor: "#1d4ed8",
+            borderWidth: 1,
 
-            backgroundColor:"#d1d5db"
+            borderRadius: 6
         }]
     },
 
-    options:{
+    options: {
+        responsive: true,
 
-        responsive:true,
+        plugins: {
+            legend: {
+                labels: {
+                    /* Cor escura para aparecer no fundo branco */
+                    color: "#1e293b",
 
-        plugins:{
-
-            legend:{
-
-                labels:{
-                    color:"white"
+                    font: {
+                        size: 14
+                    }
                 }
             }
         },
 
-        scales:{
+        scales: {
+            x: {
+                ticks: {
+                    /* Meses visíveis */
+                    color: "#1e293b"
+                },
 
-            x:{
-                ticks:{
-                    color:"white"
+                grid: {
+                    color: "#e5e7eb"
                 }
             },
 
-            y:{
-                ticks:{
-                    color:"white"
+            y: {
+                beginAtZero: true,
+
+                ticks: {
+                    /* Valores visíveis */
+                    color: "#1e293b",
+
+                    callback: function(value) {
+                        return "R$ " + value;
+                    }
+                },
+
+                grid: {
+                    color: "#e5e7eb"
                 }
             }
         }
     }
 });
-
 /* =====================================================
 ATUALIZAR GRÁFICO
 ===================================================== */
