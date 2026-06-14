@@ -1,148 +1,84 @@
-# Testes
+Testes
 
-Neste projeto serão realizados dois tipos de testes:
+Neste projeto, foram realizados dois tipos de testes: teste de software e teste de usabilidade. O objetivo foi verificar se as principais telas do sistema funcionam corretamente e se o uso delas está fácil para o usuário.
 
- - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
- - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
+Teste de Software
 
-Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
+Nesta etapa, foram testadas as principais funcionalidades do sistema, como login, cadastro de ativo, cadastro de plano preventivo, busca em estoque e acesso à área de compras.
 
-A documentação dos testes é dividida nas seguintes seções:
+Plano de Testes de Software
 
- - [Plano de Testes de Software](#plano-de-testes-de-software)
- - [Registro dos Testes de Software](#registro-dos-testes-de-software)
- - [Avaliação dos Testes de Software](#avaliação-dos-testes-de-software)
- - [Cenários de Teste de Usabilidade](#cenários-de-teste-de-usabilidade)
- - [Registro dos Testes de Usabilidade](#registro-dos-testes-de-usabilidade)
- - [Avaliação dos Testes de Usabilidade](#avaliação-dos-testes-de-usabilidade)
+Caso de teste	Procedimento	Requisito associado	Resultado esperado	Dados de entrada	Resultado obtido
+CT01 - Realizar login	Acessar a tela de login, preencher usuário e senha e clicar em entrar	RF-01 - Autenticação do usuário	O sistema deve permitir o acesso à tela principal	Usuário e senha válidos	Sucesso
+CT02 - Cadastrar ativo	Abrir a tela de Gestão de Ativos, clicar em adicionar ativo, preencher os campos e salvar	RF-02 - Cadastro de ativo	O ativo deve ser cadastrado com sucesso	Código e nome do ativo	Sucesso
+CT03 - Visualizar dados do ativo	Na tela de Gestão de Ativos, acessar as abas de dados, componentes e documentos	RF-03 - Consulta de informações do ativo	O sistema deve exibir as informações do ativo selecionado	Clique nas abas da tela	Sucesso
+CT04 - Cadastrar plano preventivo	Abrir a tela de Manutenção Preventiva, preencher os campos do plano e salvar	RF-04 - Cadastro de plano preventivo	O plano deve ser salvo na lista de planos cadastrados	Nome, equipamento, tipo, frequência, data e responsável	Sucesso
+CT05 - Adicionar peça no estoque	Abrir a tela de Estoque, clicar em adicionar peça e preencher os campos	RF-05 - Cadastro de peça no estoque	A peça deve ser adicionada corretamente	Nome da peça, quantidade e demais dados do formulário	Sucesso
+CT06 - Registrar compra	Abrir a tela de Compras, clicar em nova compra e preencher os dados	RF-06 - Registro de compra	A compra deve ser registrada e atualizada no painel	Dados da compra e valor	Sucesso
+Registro dos Testes de Software
 
-# Teste de Software
+Os testes foram executados nas principais telas do sistema. Para cada caso de teste, foi registrado o funcionamento da funcionalidade por meio de vídeo ou imagem.
 
-Nesta seção o grupo deverá documentar os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
+Exemplo de preenchimento:
 
-## Plano de Testes de Software
+CT01 - Realizar login
+Requisito associado: RF-01 - Autenticação do usuário
+Link do teste realizado: inserir link aqui
 
-Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
+CT02 - Cadastrar ativo
+Requisito associado: RF-02 - Cadastro de ativo
+Link do teste realizado: inserir link aqui
 
+CT03 - Visualizar dados do ativo
+Requisito associado: RF-03 - Consulta de informações do ativo
+Link do teste realizado: inserir link aqui
 
-**Caso de Teste** | **CT01 - Criar conta parte 1**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.teste.com.br <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Continuar".
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
-**Resultado obtido** | Sucesso
+CT04 - Cadastrar plano preventivo
+Requisito associado: RF-04 - Cadastro de plano preventivo
+Link do teste realizado: inserir link aqui
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
- :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
-**Resultado obtido** | Sucesso
+CT05 - Adicionar peça no estoque
+Requisito associado: RF-05 - Cadastro de peça no estoque
+Link do teste realizado: inserir link aqui
 
-## Registro dos Testes de Software
+CT06 - Registrar compra
+Requisito associado: RF-06 - Registro de compra
+Link do teste realizado: inserir link aqui
 
-Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
+Avaliação dos Testes de Software
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
-|---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+Os testes mostraram que as telas principais do sistema estão funcionando de forma correta. O login permite acessar o sistema, o cadastro de ativos funciona, o plano preventivo pode ser salvo e as áreas de estoque e compras também apresentam suas funções principais.
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
-|---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+Como ponto forte, o sistema está organizado e possui telas separadas para cada parte da manutenção. Como ponto fraco, algumas telas ainda podem ser melhoradas para ficar mais claras e mais fáceis de usar. Em próximas versões, a ideia é melhorar a validação dos campos, deixar a navegação mais intuitiva e revisar melhor os dados exibidos nas tabelas e cards.
 
+Teste de Usabilidade
 
-## Avaliação dos Testes de Software
+O objetivo dos testes de usabilidade foi verificar se os usuários conseguem usar o sistema com facilidade, principalmente nas telas mais importantes do projeto.
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Foram avaliados cenários ligados às principais funcionalidades da aplicação, como login, cadastro de ativo, cadastro de plano preventivo e consulta de informações nas telas.
 
-## Testes de unidade automatizados (Opcional)
+Cenários de Teste de Usabilidade
 
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
+Você é um usuário do sistema e precisa entrar na aplicação. Realize o login com usuário e senha.
+Você precisa cadastrar um novo ativo no sistema. Acesse a tela de Gestão de Ativos e faça o cadastro.
+Você precisa consultar informações de um ativo. Acesse a tela de Gestão de Ativos e navegue pelas abas de dados, componentes e documentos.
+Você precisa cadastrar um plano de manutenção preventiva. Acesse a tela de Manutenção Preventiva e salve um novo plano.
+Registro dos Testes de Usabilidade
 
-# Testes de Usabilidade
+Para cada cenário, foi observado:
 
-O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
+Taxa de sucesso: se o usuário conseguiu concluir a tarefa.
+Satisfação subjetiva: nota dada pelo usuário de 1 a 5.
+Tempo para conclusão: tempo gasto para finalizar a tarefa.
+Exemplo de preenchimento:
 
-Para tanto, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
+Cenário	Usuário	Taxa de sucesso	Satisfação subjetiva	Tempo
+Cenário 1 - Login	Usuário 1	Sim	5	20s
+Cenário 1 - Login	Usuário 2	Sim	4	25s
+Cenário 1 - Login	Usuário 3	Sim	5	18s
+Média		100%	4,6	21s
+Você pode repetir esse padrão para os outros cenários.
 
-Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
+Avaliação dos Testes de Usabilidade
 
-Taxa de sucesso: responde se o usuário conseguiu ou não executar a tarefa proposta;
-
-Satisfação subjetiva: responde como o usuário avalia o sistema com relação à execução da tarefa proposta, conforme a seguinte escala:
-
-1. Péssimo; 
-2. Ruim; 
-3. Regular; 
-4. Bom; 
-5. Ótimo.
-
-Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
-
-Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
-
-Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
-
-## Cenários de Teste de Usabilidade
-
-| Nº do Cenário | Descrição do cenário |
-|---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
-
-
-
-## Registro de Testes de Usabilidade
-
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
-|  |  |  |  |
-| **Média**     | 100%           | 5                | 28.02 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
-
-
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
-
-
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 4                    | 36.21 segundos                          |
-|  |  |  |  |
-| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
-
-
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
-
-## Avaliação dos Testes de Usabilidade
-
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
-
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
-
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
-
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
-
-
-
+De modo geral, os usuários conseguiram realizar as tarefas propostas sem grandes dificuldades. As telas principais do sistema foram consideradas organizadas e objetivas.
