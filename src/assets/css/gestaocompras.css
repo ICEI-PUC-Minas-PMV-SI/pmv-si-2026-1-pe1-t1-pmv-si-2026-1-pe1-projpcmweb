@@ -221,83 +221,71 @@ body{
 }
 
 .info-card{
-
     flex:1;
-
-    background:#16345c;
-
+    background:#f8fafc;
     padding:20px;
-
     border-radius:12px;
-
-    color:white;
+    color:#1e293b;
 }
 
 .info-card h3{
-
     font-size:14px;
-
     margin-bottom:10px;
-
-    color:#cbd5e1;
+    color:#64748b;
 }
 
 .info-card p{
-
     font-size:28px;
-
     font-weight:bold;
+    color:#1e293b;
 }
 
 /* GRAFICO */
 
 .grafico-card{
-
-    background:#16345c;
-
+    background:#f8fafc;
     border-radius:12px;
-
     padding:20px;
-
     margin-bottom:25px;
 }
 
 .grafico-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-    display:flex;
+.grafico-top h2{
+    color: #1e293b;
+}
 
-    justify-content:space-between;
-
-    align-items:center;
-
-    margin-bottom:20px;
-
-    color:white;
+.grafico-top span{
+    color: #64748b;
+    font-size: 13px;
 }
 
 .grafico-top span{
 
     font-size:13px;
 
-    color:#cbd5e1;
+    color:#64748b;
 }
 
 /* TABELA */
 
 .table-card{
 
-    background:#16345c;
+    background:#f8fafc;
 
     border-radius:12px;
 
     padding:20px;
 }
 
-.table-top{
-
-    margin-bottom:20px;
-
-    color:white;
+.table-top h2{
+    color: #1e293b;
+    font-size: 22px;
 }
 
 .table-container{
@@ -315,28 +303,23 @@ table{
 }
 
 th{
-
-    background:#1e293b;
-
-    color:white;
-
-    text-align:left;
-
-    padding:14px;
+    background: #1e293b;
+    color: white;
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
 }
 
 td{
-
-    padding:14px;
-
-    color:white;
-
-    border-bottom:1px solid rgba(255,255,255,0.1);
+    padding: 14px;
+    color: #1e293b;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
 }
 
 tr:hover{
 
-    background:rgba(255,255,255,0.03);
+    background:#f1f5f9;
 }
 
 /* DELETE BUTTON */
