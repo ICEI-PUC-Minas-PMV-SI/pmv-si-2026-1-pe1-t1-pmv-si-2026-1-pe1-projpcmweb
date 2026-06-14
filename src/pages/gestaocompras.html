@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        PCMWeb - Compras
+    </title>
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="gestaocompras.css"
+    >
+
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- CHART JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <img src="logopcm.png">
+
+            </div>
+
+            <nav class="menu">
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="tooltip">
+                        Dashboard
+                    </span>
+                </div>
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-industry"></i>
+                    <span class="tooltip">
+                        Gestão de Ativos
+                    </span>
+                </div>
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span class="tooltip">
+                        Ordem de Serviço
+                    </span>
+                </div>
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="tooltip">
+                        Preventivas
+                    </span>
+                </div>
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <span class="tooltip">
+                        Estoque
+                    </span>
+                </div>
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span class="tooltip">
+                        PCM
+                    </span>
+                </div>
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="tooltip">
+                        Treinamento
+                    </span>
+                </div>
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-user-lock"></i>
+                    <span class="tooltip">
+                        Login
+                    </span>
+                </div>
+
+                <div class="menu-item active">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="tooltip">
+                        Compras
+                    </span>
+                </div>
+
+                <div class="menu-item">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <span class="tooltip">
+                        Financeiro
+                    </span>
+                </div>
+
+            </nav>
+
+        </aside>
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+            <!-- TOPBAR -->
+
+            <header class="topbar">
+
+                <h1>
+                    Gestão de Compras e Insumos
+                </h1>
+
+                <button id="btnCompra">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Nova Compra
+
+                </button>
+
+            </header>
+
+            <!-- CONTENT -->
+
+            <div class="content-area">
+
+                <!-- CARDS -->
+
+                <section class="cards">
+
+                    <div class="info-card">
+
+                        <h3>Total de compras</h3>
+
+                        <p id="totalCompras">
+                            R$ 0
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Compras este mês</h3>
+
+                        <p id="comprasMes">
+                            R$ 0
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Pedidos Comprados</h3>
+
+                        <p id="pedidos">
+                            0
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- GRAFICO -->
+
+                <section class="grafico-card">
+
+                    <div class="grafico-top">
+
+                        <h2>
+                            Gastos Mensais
+                        </h2>
+
+                        <span>
+                            Relatório mensal de gastos
+                        </span>
+
+                    </div>
+
+                    <canvas id="graficoCompras"></canvas>
+
+                </section>
+
+                <!-- TABELA -->
+
+                <section class="table-card">
+
+                    <div class="table-top">
+
+                        <h2>
+                            Tabela de Compras
+                        </h2>
+
+                    </div>
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>ID</th>
+
+                                    <th>Produto</th>
+
+                                    <th>Qtd</th>
+
+                                    <th>Valor</th>
+
+                                    <th>Data</th>
+
+                                    <th>Ações</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="tbody">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-box">
+
+            <h2>
+                Nova Compra
+            </h2>
+
+            <input
+                type="text"
+                id="idCompra"
+                placeholder="ID"
+            >
+
+            <input
+                type="text"
+                id="produtoCompra"
+                placeholder="Produto"
+            >
+
+            <input
+                type="number"
+                id="qtdCompra"
+                placeholder="Quantidade"
+            >
+
+            <input
+                type="number"
+                id="valorCompra"
+                placeholder="Valor"
+            >
+
+            <input
+                type="date"
+                id="dataCompra"
+            >
+
+            <div class="modal-buttons">
+
+                <button
+                    class="cancel-btn"
+                    id="fecharModal"
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    class="save-btn"
+                    id="salvarCompra"
+                >
+                    Salvar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="gestaocompras.js"></script>
+
+</body>
+
+</html>
