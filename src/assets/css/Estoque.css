@@ -60,9 +60,20 @@ MENU
 ===================================================== */
 
 .menu{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    flex:1;
+}
+
+.logout{
+    margin-top:auto;
+    margin-bottom:20px;
+}
+
+.logout{
+    margin-top:auto;
+    margin-bottom:20px;
 }
 
 .menu-item{
