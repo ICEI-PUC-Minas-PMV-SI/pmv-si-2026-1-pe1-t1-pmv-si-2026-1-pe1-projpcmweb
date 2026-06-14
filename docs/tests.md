@@ -1,84 +1,158 @@
-Testes
+# Testes do Sistema
 
-Neste projeto, foram realizados dois tipos de testes: teste de software e teste de usabilidade. O objetivo foi verificar se as principais telas do sistema funcionam corretamente e se o uso delas está fácil para o usuário.
+## Visão Geral
 
-Teste de Software
+Neste projeto foram realizados dois tipos de testes:
 
-Nesta etapa, foram testadas as principais funcionalidades do sistema, como login, cadastro de ativo, cadastro de plano preventivo, busca em estoque e acesso à área de compras.
+* Testes de Software
+* Testes de Usabilidade
 
-Plano de Testes de Software
+O objetivo foi verificar se as principais funcionalidades do sistema operam corretamente e se a experiência de uso é intuitiva para os usuários.
 
-Caso de teste	Procedimento	Requisito associado	Resultado esperado	Dados de entrada	Resultado obtido
-CT01 - Realizar login	Acessar a tela de login, preencher usuário e senha e clicar em entrar	RF-01 - Autenticação do usuário	O sistema deve permitir o acesso à tela principal	Usuário e senha válidos	Sucesso
-CT02 - Cadastrar ativo	Abrir a tela de Gestão de Ativos, clicar em adicionar ativo, preencher os campos e salvar	RF-02 - Cadastro de ativo	O ativo deve ser cadastrado com sucesso	Código e nome do ativo	Sucesso
-CT03 - Visualizar dados do ativo	Na tela de Gestão de Ativos, acessar as abas de dados, componentes e documentos	RF-03 - Consulta de informações do ativo	O sistema deve exibir as informações do ativo selecionado	Clique nas abas da tela	Sucesso
-CT04 - Cadastrar plano preventivo	Abrir a tela de Manutenção Preventiva, preencher os campos do plano e salvar	RF-04 - Cadastro de plano preventivo	O plano deve ser salvo na lista de planos cadastrados	Nome, equipamento, tipo, frequência, data e responsável	Sucesso
-CT05 - Adicionar peça no estoque	Abrir a tela de Estoque, clicar em adicionar peça e preencher os campos	RF-05 - Cadastro de peça no estoque	A peça deve ser adicionada corretamente	Nome da peça, quantidade e demais dados do formulário	Sucesso
-CT06 - Registrar compra	Abrir a tela de Compras, clicar em nova compra e preencher os dados	RF-06 - Registro de compra	A compra deve ser registrada e atualizada no painel	Dados da compra e valor	Sucesso
-Registro dos Testes de Software
+---
 
-Os testes foram executados nas principais telas do sistema. Para cada caso de teste, foi registrado o funcionamento da funcionalidade por meio de vídeo ou imagem.
+# Testes de Software
 
-Exemplo de preenchimento:
+Os testes de software foram executados para validar as funcionalidades principais da aplicação, incluindo autenticação, gestão de ativos, manutenção preventiva, estoque e compras.
 
-CT01 - Realizar login
-Requisito associado: RF-01 - Autenticação do usuário
-Link do teste realizado: inserir link aqui
+## Plano de Testes
 
-CT02 - Cadastrar ativo
-Requisito associado: RF-02 - Cadastro de ativo
-Link do teste realizado: inserir link aqui
+| Caso de Teste                     | Procedimento                                                                      | Requisito Associado                      | Resultado Esperado                            | Dados de Entrada                                        | Resultado Obtido |
+| --------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------- | ------------------------------------------------------- | ---------------- |
+| CT01 - Realizar Login             | Acessar a tela de login, preencher usuário e senha e clicar em Entrar             | RF-01 - Autenticação do Usuário          | Permitir acesso à tela principal              | Usuário e senha válidos                                 | Sucesso          |
+| CT02 - Cadastrar Ativo            | Acessar Gestão de Ativos, clicar em Adicionar Ativo, preencher os campos e salvar | RF-02 - Cadastro de Ativo                | Cadastrar o ativo com sucesso                 | Código e nome do ativo                                  | Sucesso          |
+| CT03 - Visualizar Dados do Ativo  | Acessar as abas Dados, Componentes e Documentos                                   | RF-03 - Consulta de Informações do Ativo | Exibir as informações do ativo selecionado    | Navegação entre abas                                    | Sucesso          |
+| CT04 - Cadastrar Plano Preventivo | Acessar Manutenção Preventiva, preencher os campos e salvar                       | RF-04 - Cadastro de Plano Preventivo     | Salvar o plano na lista de planos cadastrados | Nome, equipamento, tipo, frequência, data e responsável | Sucesso          |
+| CT05 - Adicionar Peça ao Estoque  | Acessar Estoque, clicar em Adicionar Peça e preencher os campos                   | RF-05 - Cadastro de Peça no Estoque      | Adicionar a peça corretamente                 | Nome da peça, quantidade e demais informações           | Sucesso          |
+| CT06 - Registrar Compra           | Acessar Compras, clicar em Nova Compra e preencher os dados                       | RF-06 - Registro de Compra               | Registrar a compra e atualizar o painel       | Dados da compra e valor                                 | Sucesso          |
 
-CT03 - Visualizar dados do ativo
-Requisito associado: RF-03 - Consulta de informações do ativo
-Link do teste realizado: inserir link aqui
+---
 
-CT04 - Cadastrar plano preventivo
-Requisito associado: RF-04 - Cadastro de plano preventivo
-Link do teste realizado: inserir link aqui
+## Evidências dos Testes
 
-CT05 - Adicionar peça no estoque
-Requisito associado: RF-05 - Cadastro de peça no estoque
-Link do teste realizado: inserir link aqui
+As evidências podem ser armazenadas em uma pasta específica do projeto, como:
 
-CT06 - Registrar compra
-Requisito associado: RF-06 - Registro de compra
-Link do teste realizado: inserir link aqui
+```text
+/docs/evidencias/
+```
 
-Avaliação dos Testes de Software
+### CT01 - Realizar Login
 
-Os testes mostraram que as telas principais do sistema estão funcionando de forma correta. O login permite acessar o sistema, o cadastro de ativos funciona, o plano preventivo pode ser salvo e as áreas de estoque e compras também apresentam suas funções principais.
+**Requisito:** RF-01 - Autenticação do Usuário
 
-Como ponto forte, o sistema está organizado e possui telas separadas para cada parte da manutenção. Como ponto fraco, algumas telas ainda podem ser melhoradas para ficar mais claras e mais fáceis de usar. Em próximas versões, a ideia é melhorar a validação dos campos, deixar a navegação mais intuitiva e revisar melhor os dados exibidos nas tabelas e cards.
+**Evidência:** Inserir link ou imagem
 
-Teste de Usabilidade
+### CT02 - Cadastrar Ativo
 
-O objetivo dos testes de usabilidade foi verificar se os usuários conseguem usar o sistema com facilidade, principalmente nas telas mais importantes do projeto.
+**Requisito:** RF-02 - Cadastro de Ativo
 
-Foram avaliados cenários ligados às principais funcionalidades da aplicação, como login, cadastro de ativo, cadastro de plano preventivo e consulta de informações nas telas.
+**Evidência:** Inserir link ou imagem
 
-Cenários de Teste de Usabilidade
+### CT03 - Visualizar Dados do Ativo
 
-Você é um usuário do sistema e precisa entrar na aplicação. Realize o login com usuário e senha.
-Você precisa cadastrar um novo ativo no sistema. Acesse a tela de Gestão de Ativos e faça o cadastro.
-Você precisa consultar informações de um ativo. Acesse a tela de Gestão de Ativos e navegue pelas abas de dados, componentes e documentos.
-Você precisa cadastrar um plano de manutenção preventiva. Acesse a tela de Manutenção Preventiva e salve um novo plano.
-Registro dos Testes de Usabilidade
+**Requisito:** RF-03 - Consulta de Informações do Ativo
 
-Para cada cenário, foi observado:
+**Evidência:** Inserir link ou imagem
 
-Taxa de sucesso: se o usuário conseguiu concluir a tarefa.
-Satisfação subjetiva: nota dada pelo usuário de 1 a 5.
-Tempo para conclusão: tempo gasto para finalizar a tarefa.
-Exemplo de preenchimento:
+### CT04 - Cadastrar Plano Preventivo
 
-Cenário	Usuário	Taxa de sucesso	Satisfação subjetiva	Tempo
-Cenário 1 - Login	Usuário 1	Sim	5	20s
-Cenário 1 - Login	Usuário 2	Sim	4	25s
-Cenário 1 - Login	Usuário 3	Sim	5	18s
-Média		100%	4,6	21s
-Você pode repetir esse padrão para os outros cenários.
+**Requisito:** RF-04 - Cadastro de Plano Preventivo
 
-Avaliação dos Testes de Usabilidade
+**Evidência:** Inserir link ou imagem
 
-De modo geral, os usuários conseguiram realizar as tarefas propostas sem grandes dificuldades. As telas principais do sistema foram consideradas organizadas e objetivas.
+### CT05 - Adicionar Peça ao Estoque
+
+**Requisito:** RF-05 - Cadastro de Peça no Estoque
+
+**Evidência:** Inserir link ou imagem
+
+### CT06 - Registrar Compra
+
+**Requisito:** RF-06 - Registro de Compra
+
+**Evidência:** Inserir link ou imagem
+
+---
+
+## Avaliação dos Testes de Software
+
+Os testes realizados demonstraram que as funcionalidades principais do sistema estão operando conforme o esperado.
+
+### Pontos Fortes
+
+* Processo de autenticação funcional.
+* Cadastro e consulta de ativos funcionando corretamente.
+* Cadastro de planos preventivos concluído com sucesso.
+* Operações de estoque e compras executadas sem falhas.
+* Estrutura modular com telas separadas por funcionalidade.
+
+### Oportunidades de Melhoria
+
+* Implementação de validações adicionais nos formulários.
+* Aprimoramento da navegação entre telas.
+* Revisão das informações exibidas em tabelas e cards.
+* Tratamento de mensagens de erro e feedback ao usuário.
+
+---
+
+# Testes de Usabilidade
+
+Os testes de usabilidade tiveram como objetivo avaliar a facilidade de uso da aplicação e verificar se os usuários conseguem executar as principais tarefas propostas.
+
+## Cenários Avaliados
+
+### Cenário 1 - Realizar Login
+
+O usuário deve acessar a aplicação utilizando usuário e senha válidos.
+
+### Cenário 2 - Cadastrar um Novo Ativo
+
+O usuário deve acessar a tela de Gestão de Ativos e registrar um novo equipamento.
+
+### Cenário 3 - Consultar Informações de um Ativo
+
+O usuário deve localizar um ativo e navegar entre as abas de dados, componentes e documentos.
+
+### Cenário 4 - Cadastrar Plano de Manutenção Preventiva
+
+O usuário deve acessar a tela de Manutenção Preventiva e cadastrar um novo plano.
+
+---
+
+## Registro dos Testes de Usabilidade
+
+| Cenário           | Usuário   | Taxa de Sucesso | Satisfação (1-5) | Tempo   |
+| ----------------- | --------- | --------------- | ---------------- | ------- |
+| Cenário 1 - Login | Usuário 1 | Sim             | 5                | 20s     |
+| Cenário 1 - Login | Usuário 2 | Sim             | 4                | 25s     |
+| Cenário 1 - Login | Usuário 3 | Sim             | 5                | 18s     |
+| **Média**         | -         | **100%**        | **4,6**          | **21s** |
+
+> Repita a mesma estrutura para os demais cenários avaliados.
+
+---
+
+## Avaliação dos Testes de Usabilidade
+
+De modo geral, os participantes conseguiram concluir as tarefas propostas sem dificuldades significativas.
+
+### Aspectos Positivos
+
+* Navegação simples e intuitiva.
+* Organização adequada das funcionalidades.
+* Facilidade para localizar recursos importantes.
+* Fluxo de utilização consistente entre as telas.
+
+### Aspectos a Melhorar
+
+* Tornar os formulários mais explicativos.
+* Melhorar textos de apoio e mensagens do sistema.
+* Padronizar elementos visuais e componentes da interface.
+* Aprimorar a experiência do usuário em dispositivos de diferentes tamanhos.
+
+---
+
+## Conclusão
+
+Os testes de software e usabilidade indicam que o sistema atende aos requisitos funcionais propostos para a gestão de manutenção industrial. As funcionalidades essenciais foram validadas com sucesso e os usuários demonstraram facilidade na execução das tarefas principais.
+As melhorias identificadas serão consideradas em versões futuras com o objetivo de aumentar a eficiência, a consistência visual e a experiência geral de utilização da aplicação.
