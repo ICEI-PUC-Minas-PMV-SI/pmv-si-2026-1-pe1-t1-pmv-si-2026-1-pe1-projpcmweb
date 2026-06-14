@@ -56,12 +56,15 @@ body{
 /* MENU */
 
 .menu{
-
     display:flex;
-
     flex-direction:column;
+    gap:18px;
+    flex:1;
+}
 
-    gap:10px;
+.logout{
+    margin-top:auto;
+    margin-bottom:20px;
 }
 
 .menu-item{
