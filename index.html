@@ -11,7 +11,7 @@
     >
 
     <title>
-        Sistema de Manutenção de Màquinas - PCMWeb
+        Sistema de Manutenção de Máquinas - PCMWeb
     </title>
 
     <!-- FONT AWESOME -->
@@ -172,11 +172,59 @@
         }
 
         /* =====================================================
-           ÁREA VAZIA
+           ÁREA DE CONTEÚDO
         ===================================================== */
 
         .content-area {
             flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        /* =====================================================
+           MENSAGEM DE BOAS-VINDAS
+        ===================================================== */
+
+        .welcome-card {
+            width: 100%;
+            max-width: 650px;
+            padding: 50px 40px;
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 18px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+        }
+
+        .welcome-icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2563eb;
+            border-radius: 50%;
+            font-size: 38px;
+            color: white;
+        }
+
+        .welcome-card h2 {
+            margin-bottom: 15px;
+            font-size: 32px;
+        }
+
+        .welcome-card p {
+            color: #cbd5e1;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .welcome-card strong {
+            color: #60a5fa;
         }
 
         /* =====================================================
@@ -197,6 +245,24 @@
 
             .topbar h1 {
                 font-size: 20px;
+            }
+
+            .welcome-card {
+                padding: 35px 25px;
+            }
+
+            .welcome-card h2 {
+                font-size: 26px;
+            }
+
+            .welcome-card p {
+                font-size: 15px;
+            }
+
+            .welcome-icon {
+                width: 75px;
+                height: 75px;
+                font-size: 32px;
             }
 
         }
@@ -226,125 +292,119 @@
 
             <!-- MENU LATERAL -->
 
-          
+            <nav class="menu">
 
-<nav class="menu">
+                <a
+                    href="./src/pages/dashboard.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-chart-line"></i>
 
-    <a
-        href="./src/pages/dashboard.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-chart-line"></i>
+                    <span class="tooltip">
+                        Dashboard Operacional
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Dashboard Operacional
-        </span>
-    </a>
+                <a
+                    href="./src/pages/gestaodeativos.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-industry"></i>
 
-    <a
-        href="./src/pages/gestaodeativos.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-industry"></i>
+                    <span class="tooltip">
+                        Gestão de Ativos
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Gestão de Ativos
-        </span>
-    </a>
+                <a
+                    href="./src/pages/TelaOS.html"
+                    class="menu-item active"
+                >
+                    <i class="fa-solid fa-clipboard-list"></i>
 
-    <a
-        href="./src/pages/TelaOS.html"
-        class="menu-item active"
-    >
-        <i class="fa-solid fa-clipboard-list"></i>
+                    <span class="tooltip">
+                        Ordem de Serviço
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Ordem de Serviço
-        </span>
-    </a>
+                <a
+                    href="./src/pages/planejamento.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-calendar-check"></i>
 
-    <a
-        href="./src/pages/planejamento.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-calendar-check"></i>
+                    <span class="tooltip">
+                        Plano Preventivo
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Plano Preventivo
-        </span>
-    </a>
+                <a
+                    href="./src/pages/Estoque.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-boxes-stacked"></i>
 
-    <a
-        href="./src/pages/Estoque.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-boxes-stacked"></i>
+                    <span class="tooltip">
+                        Gestão de Estoque
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Gestão de Estoque
-        </span>
-    </a>
+                <a
+                    href="./src/pages/manutencao.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
 
-    <a
-        href="./src/pages/manutencao.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span class="tooltip">
+                        PCM
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            PCM
-        </span>
-    </a>
+                <a
+                    href="./src/pages/trainamento.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-graduation-cap"></i>
 
-    <a
-        href="./src/pages/trainamento.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="tooltip">
+                        Treinamento
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Treinamento
-        </span>
-    </a>
+                <a
+                    href="./src/pages/login.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-user-lock"></i>
 
-    <a
-        href="./src/pages/login.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-user-lock"></i>
+                    <span class="tooltip">
+                        Login
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Login
-        </span>
-    </a>
+                <a
+                    href="./src/pages/gestaocompras.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-cart-shopping"></i>
 
-    <a
-        href="./src/pages/gestaocompras.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="tooltip">
+                        Compras
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Compras
-        </span>
-    </a>
+                <a
+                    href="./src/pages/financeiro.html"
+                    class="menu-item"
+                >
+                    <i class="fa-solid fa-money-bill-wave"></i>
 
-    <a
-        href="./src/pages/financeiro.html"
-        class="menu-item"
-    >
-        <i class="fa-solid fa-money-bill-wave"></i>
+                    <span class="tooltip">
+                        Financeiro
+                    </span>
+                </a>
 
-        <span class="tooltip">
-            Financeiro
-        </span>
-    </a>
-
-</nav>
-
-
-
-
+            </nav>
 
         </aside>
 
@@ -357,14 +417,35 @@
             <header class="topbar">
 
                 <h1>
-                    Sistema de Manutenção de Màquinas
+                    Sistema de Manutenção de Máquinas
                 </h1>
 
             </header>
 
-            <!-- ÁREA VAZIA -->
+            <!-- ÁREA DE BOAS-VINDAS -->
 
-            <section class="content-area"></section>
+            <section class="content-area">
+
+                <div class="welcome-card">
+
+                    <div class="welcome-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+
+                    <h2>
+                        Bem-vindo ao PCMWeb!
+                    </h2>
+
+                    <p>
+                        Seja bem-vindo ao <strong>Sistema de Manutenção de Máquinas</strong>.
+                        Utilize o menu lateral para acessar as funcionalidades de gestão de
+                        ativos, ordens de serviço, manutenção preventiva, estoque, compras
+                        e demais recursos do sistema.
+                    </p>
+
+                </div>
+
+            </section>
 
         </main>
 
