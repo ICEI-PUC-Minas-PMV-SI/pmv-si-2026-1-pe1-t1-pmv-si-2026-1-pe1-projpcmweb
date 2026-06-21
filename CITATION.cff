@@ -1,53 +1,46 @@
 cff-version: 1.2.0
+
 title: PCM Web
-message: >-
-Caso utilize este projeto como referência, por favor cite
-o repositório PCM Web.
+
+message: "Caso utilize este projeto como referência, por favor cite este repositório."
 
 type: software
 
 authors:
+  - given-names: Aline Cristina
+    family-names: De Castro Luna
 
-* given-names: Aline Cristina
-  family-names: De Castro Luna
-  affiliation: PUC Minas
+  - given-names: Davi Augusto
+    family-names: Silva Chaves
 
-* given-names: Davi Augusto
-  family-names: Silva Chaves
-  affiliation: PUC Minas
+  - given-names: Joao Francisco Giovannini
+    family-names: de Almeida Cunha
 
-* given-names: Joao Francisco Giovannini
-  family-names: de Almeida Cunha
-  affiliation: PUC Minas
+  - given-names: Vivian Nascimento Silva
+    family-names: Amorim
 
-* given-names: Vivian Nascimento Silva
-  family-names: Amorim
-  affiliation: PUC Minas
-
-* given-names: Vitor Gabriel Nascimento
-  family-names: Jerônimo
-  affiliation: PUC Minas
+  - given-names: Vitor Gabriel Nascimento
+    family-names: Jerônimo
 
 repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe1-t1-pmv-si-2026-1-pe1-projpcmweb
 
-abstract: >-
-O PCM Web é uma aplicação web desenvolvida para auxiliar o
-gerenciamento de manutenção industrial. O sistema contempla
-funcionalidades de Gestão de Ativos, Planejamento e Controle
-de Manutenção (PCM), acompanhamento de indicadores operacionais,
-organização de ativos industriais e controle das informações
-técnicas dos equipamentos.
+abstract: >
+  O PCM Web é uma aplicação web desenvolvida para auxiliar
+  o gerenciamento de manutenção industrial. O sistema contempla
+  funcionalidades de Gestão de Ativos, Planejamento e Controle
+  de Manutenção (PCM), acompanhamento de indicadores operacionais
+  e organização de informações técnicas dos equipamentos.
 
 keywords:
+  - PCM
+  - Gestão de Ativos
+  - Manutenção Industrial
+  - HTML
+  - CSS
+  - JavaScript
+  - Desenvolvimento Web
+  - PUC Minas
 
-* PCM
-* Gestão de Ativos
-* Manutenção Industrial
-* HTML
-* CSS
-* JavaScript
-* Desenvolvimento Web
-* PUC Minas
-
-date-released: "2026-06-21"
 license: MIT
+
+date-released: 2026-06-21
