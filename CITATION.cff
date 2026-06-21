@@ -1,33 +1,53 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
-title: Web Application Template
+title: PCM Web
 message: >-
-  Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
-  Web da PUC Minas.
+Caso utilize este projeto como referência, por favor cite
+o repositório PCM Web.
+
 type: software
+
 authors:
-  - given-names: Aluno 1
-    family-names: Nome Completo
-    email: aluno@pucminas.br
-    affiliation: PUC Minas
-  - given-names: Hugo
-    name-particle: 'B '
-    family-names: de Paula
-    name-suffix: Prof.
-    email: hugo@pucminas.br
-    affiliation: PUC Minas
-    orcid: 'https://orcid.org/0000-0002-6193-3205'
-repository-code: >-
-  https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
+
+* given-names: Aline Cristina
+  family-names: De Castro Luna
+  affiliation: PUC Minas
+
+* given-names: Davi Augusto
+  family-names: Silva Chaves
+  affiliation: PUC Minas
+
+* given-names: Joao Francisco Giovannini
+  family-names: de Almeida Cunha
+  affiliation: PUC Minas
+
+* given-names: Vivian Nascimento Silva
+  family-names: Amorim
+  affiliation: PUC Minas
+
+* given-names: Vitor Gabriel Nascimento
+  family-names: Jerônimo
+  affiliation: PUC Minas
+
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe1-t1-pmv-si-2026-1-pe1-projpcmweb
+
 abstract: >-
-  Descrever resumidamente, em um ou dois parágrafos, o
-  projeto que foi desenvolvido.
+O PCM Web é uma aplicação web desenvolvida para auxiliar o
+gerenciamento de manutenção industrial. O sistema contempla
+funcionalidades de Gestão de Ativos, Planejamento e Controle
+de Manutenção (PCM), acompanhamento de indicadores operacionais,
+organização de ativos industriais e controle das informações
+técnicas dos equipamentos.
+
 keywords:
-  - Desenvolvimento Web
-  - HTML
-  - CSS
-  - JavaScript
-  - Template
-date-released: '2024-06-23'
+
+* PCM
+* Gestão de Ativos
+* Manutenção Industrial
+* HTML
+* CSS
+* JavaScript
+* Desenvolvimento Web
+* PUC Minas
+
+date-released: "2026-06-21"
+license: MIT
