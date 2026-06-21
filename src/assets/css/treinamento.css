@@ -1,0 +1,427 @@
+
+/* CARD */
+
+.card-dark{
+    background: #f8fafc;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+
+    color: #000000;
+}
+
+/* VIDEO TITLE */
+
+.video-title{
+    text-align: center;
+
+    font-size: 42px;
+    font-weight: 300;
+
+    margin-bottom: 35px;
+
+    color: #000000;
+}
+
+/* VIDEO CONTAINER */
+
+.video-container{
+    width: 700px;
+    height: 400px;
+
+    background: #243447;
+
+    margin: auto;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PLAY BUTTON */
+
+.play-button{
+    width: 110px;
+    height: 110px;
+
+    background: #111827;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.play-button:hover{
+    transform: scale(1.05);
+}
+
+.play-button i{
+    font-size: 42px;
+
+    color: #2563eb;
+
+    margin-left: 5px;
+}
+
+/* BUTTONS */
+
+.video-buttons{
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 35px;
+}
+
+.video-buttons button{
+    width: 180px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.video-buttons button:hover{
+    background: #1d4ed8;
+}
+
+.training-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.training-item input{
+    width: 18px;
+    height: 18px;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 900px){
+
+    .video-container{
+        width: 100%;
+        height: 260px;
+    }
+
+    .video-title{
+        font-size: 30px;
+    }
+
+    .video-buttons{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .video-buttons button{
+        width: 100%;
+    }
+
+    .sidebar{
+        width: 60px;
+    }
+
+    .menu-item{
+    text-decoration: none;
+        width: 38px;
+        height: 38px;
+        font-size: 15px;
+    }
+}
+
+/* ===========================
+   RELÓGIO
+=========================== */
+
+#clock{
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card-dark{
+    transition:.3s;
+}
+
+.card-dark:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
+}
+
+/* ===========================
+   PROGRESSO
+=========================== */
+
+.progress-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#dbeafe;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-bottom:10px;
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:#2563eb;
+
+    transition:.4s;
+}
+
+/* ===========================
+   CHECKBOXES
+=========================== */
+
+.training-item label{
+
+    transition:.3s;
+}
+
+.training-item input:checked + label{
+
+    text-decoration:line-through;
+
+    color:#22c55e;
+
+    font-weight:bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* =========================
+   APP LAYOUT
+========================= */
+
+.app{
+    min-height: 100vh;
+    display: flex;
+    background-color: #0f172a;
+}
+
+/* =========================
+   SIDEBAR PADRÃO
+========================= */
+
+.sidebar{
+    width: 72px;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    border-right: 1px solid #1f2937;
+}
+
+.menu-item i{
+    color: white !important;
+}
+
+.logo{
+    margin-bottom: 25px;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* MENU */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item{
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 16px;
+
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.menu-item:hover{
+    background-color: #1e293b;
+}
+
+.menu-item.active{
+    background-color: #2563eb;
+}
+
+/* TOOLTIP */
+
+.tooltip{
+    position: absolute;
+    left: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: #111827;
+    color: white;
+
+    padding: 7px 11px;
+    border-radius: 6px;
+
+    font-size: 16px;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+
+    z-index: 999;
+}
+
+.menu-item:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+/* =========================
+   TOPBAR PADRÃO
+========================= */
+
+.topbar{
+    height: 75px;
+
+    background-color: #1C1C1C;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    border-bottom: 1px solid #1f2937;
+}
+
+.topbar h1{
+    font-size: 26px;
+    margin: 0;
+}
+
+/* botão opcional padrão */
+.topbar button{
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.topbar button:hover{
+    background-color: #1d4ed8;
+}
+
+.tit1{
+    color: white;
+}
+
+/* =====================================================
+   SIDEBAR/TOPBAR PADRAO - REFERENCIA: GESTAO DE ATIVOS
+===================================================== */
+
+.sidebar{ width: 72px; background-color: #1d1d1d; display: flex; flex-direction: column; align-items: center; padding-top: 15px; border-right: 1px solid #1d1d1d; }
+.logo{ margin-bottom: 25px; }
+.logo img{ width: 42px; height: 42px; object-fit: contain; }
+.menu{ display: flex; flex-direction: column; gap: 18px; flex: 1; }
+.logout{ margin-top: auto; margin-bottom: 20px; }
+.menu-item{ text-decoration: none; width: 42px; height: 42px; display: flex; justify-content: center; align-items: center; color: white; font-size: 16px; border-radius: 12px; cursor: pointer; transition: 0.3s; position: relative; }
+.menu-item:hover{ background-color: #1e293b; }
+.menu-item.active{ background-color: #2563eb; }
+.tooltip{ position: absolute; left: 65px; top: 50%; transform: translateY(-50%); background-color: #111827; color: white; padding: 7px 11px; border-radius: 6px; font-size: 16px; white-space: nowrap; opacity: 0; visibility: hidden; transition: 0.2s; z-index: 999; }
+.menu-item:hover .tooltip{ opacity: 1; visibility: visible; }
+.main-content{ flex: 1; display: flex; flex-direction: column; }
+.topbar{ height: 75px; background-color: #1d1d1d; display: flex; align-items: center; justify-content: space-between; padding: 0 25px; color: white; border-bottom: 1px solid #1f2937; }
+.topbar h1{ font-size: 26px; }
+.topbar button{ background: #2563eb; color: white; border: none; padding: 12px 18px; border-radius: 10px; cursor: pointer; font-size: 14px; height: 45px; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+.topbar button:hover{ background-color: #1d4ed8; }
+
+@media(max-width: 900px){
+    .sidebar{ width: 60px; }
+    .menu-item{ width: 38px; height: 38px; font-size: 18px; }
+    .topbar h1{ font-size: 20px; }
+}
