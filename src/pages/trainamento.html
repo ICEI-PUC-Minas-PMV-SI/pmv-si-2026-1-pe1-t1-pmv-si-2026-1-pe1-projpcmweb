@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PCMWeb - Treinamentos</title>
+
+    <link rel="stylesheet" href="treinamento.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR (IGUAL AO DASHBOARD) -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="logopcmw.png">
+        </div>
+
+                    <nav class="menu">
+
+                <a class="menu-item" href="dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="tooltip">Dashboard Operacional</span>
+                </a>
+
+                <a class="menu-item" href="gestaodeativos.html">
+                    <i class="fa-solid fa-industry"></i>
+                    <span class="tooltip">Gestao de Ativos</span>
+                </a>
+
+                <a class="menu-item" href="TelaOS.html">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span class="tooltip">Ordem de Servico</span>
+                </a>
+
+                <a class="menu-item" href="manutencao.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="tooltip">Plano Preventivo</span>
+                </a>
+
+                <a class="menu-item" href="Estoque.html">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <span class="tooltip">Gestao de Estoque</span>
+                </a>
+
+                <a class="menu-item" href="planejamento.html">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span class="tooltip">PCM</span>
+                </a>
+
+                <a class="menu-item active" href="trainamento.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="tooltip">Treinamento</span>
+                </a>
+
+                <a class="menu-item" href="gestaocompras.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="tooltip">Compras</span>
+                </a>
+
+            </nav>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <h1 class="tit1">Treinamento</h1>
+        </header>
+
+        <div class="content-area">
+
+            <!-- VÍDEO -->
+
+            <div class="card-dark">
+
+                <h2 class="video-title">Vídeo 1</h2>
+
+                <div class="video-container">
+
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+
+                </div>
+
+                <div class="video-buttons">
+                    <button>Anterior</button>
+                    <button>Próximo</button>
+                </div>
+
+            </div>
+
+            <!-- CHECKBOX LISTA (DO PRIMEIRO CÓDIGO) -->
+
+            <div class="card-dark" style="margin-top: 20px;">
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 1</label>
+                </div>
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 2</label>
+                </div>
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 3</label>
+                </div>
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 4</label>
+                </div>
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 5</label>
+                </div>
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 6</label>
+                </div>
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 7</label>
+                </div>
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 8</label>
+                </div>
+
+                <div class="training-item">
+                    <input type="checkbox">
+                    <label>Vídeo 9</label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script>
+
+const videos = [
+    "Vídeo 1",
+    "Vídeo 2",
+    "Vídeo 3",
+    "Vídeo 4",
+    "Vídeo 5",
+    "Vídeo 6",
+    "Vídeo 7",
+    "Vídeo 8",
+    "Vídeo 9"
+];
+
+let videoAtual = 0;
+
+const tituloVideo =
+    document.querySelector(".video-title");
+
+const btnAnterior =
+    document.querySelectorAll(".video-buttons button")[0];
+
+const btnProximo =
+    document.querySelectorAll(".video-buttons button")[1];
+
+function atualizarVideo(){
+
+    tituloVideo.textContent =
+        videos[videoAtual];
+
+}
+
+btnProximo.addEventListener("click",()=>{
+
+    if(videoAtual < videos.length - 1){
+
+        videoAtual++;
+
+        atualizarVideo();
+
+    }
+
+});
+
+btnAnterior.addEventListener("click",()=>{
+
+    if(videoAtual > 0){
+
+        videoAtual--;
+
+        atualizarVideo();
+
+    }
+
+});
+
+/* ===========================
+   RELÓGIO
+=========================== */
+
+function atualizarRelogio(){
+
+    document.getElementById("clock")
+        .innerHTML =
+        new Date()
+        .toLocaleTimeString("pt-BR");
+
+}
+
+setInterval(atualizarRelogio,1000);
+
+atualizarRelogio();
+
+/* ===========================
+   MENU ATIVO
+=========================== */
+
+document
+.querySelectorAll(".menu-item")
+.forEach(item=>{
+
+    item.addEventListener("click",()=>{
+
+        document
+        .querySelectorAll(".menu-item")
+        .forEach(i=>i.classList.remove("active"));
+
+        item.classList.add("active");
+
+    });
+
+});
+
+/* ===========================
+   BARRA DE PROGRESSO
+=========================== */
+
+const progresso =
+document.createElement("div");
+
+progresso.innerHTML = `
+
+<h3 style="margin-bottom:10px;">
+Progresso do Treinamento
+</h3>
+
+<div class="progress-bar">
+
+    <div class="progress-fill"></div>
+
+</div>
+
+<p id="progressText">
+0 de 9 concluídos
+</p>
+
+`;
+
+document
+.querySelectorAll(".card-dark")[1]
+.prepend(progresso);
+
+/* ===========================
+   CHECKBOXES
+=========================== */
+
+const checks =
+document.querySelectorAll(
+".training-item input"
+);
+
+function atualizarProgresso(){
+
+    let concluido = 0;
+
+    checks.forEach(c=>{
+
+        if(c.checked)
+            concluido++;
+
+    });
+
+    const porcentagem =
+        (concluido/checks.length)*100;
+
+    document
+    .querySelector(".progress-fill")
+    .style.width =
+    porcentagem + "%";
+
+    document
+    .getElementById("progressText")
+    .innerHTML =
+    `${concluido} de ${checks.length} concluídos`;
+
+    localStorage.setItem(
+        "treinamentos",
+        JSON.stringify(
+            [...checks]
+            .map(c=>c.checked)
+        )
+    );
+
+    if(concluido === checks.length){
+
+        setTimeout(()=>{
+
+            alert(
+            "🎉 Treinamento concluído com sucesso!"
+            );
+
+        },300);
+
+    }
+
+}
+
+const salvos =
+JSON.parse(
+localStorage.getItem("treinamentos")
+);
+
+if(salvos){
+
+    checks.forEach((c,i)=>{
+
+        c.checked = salvos[i];
+
+    });
+
+}
+
+checks.forEach(check=>{
+
+    check.addEventListener(
+        "change",
+        atualizarProgresso
+    );
+
+});
+
+atualizarProgresso();
+
+/* ===========================
+   PLAY BUTTON
+=========================== */
+
+document
+.querySelector(".play-button")
+.addEventListener("click",()=>{
+
+    alert(
+        "▶ Reproduzindo: " +
+        videos[videoAtual]
+    );
+
+});
+
+/* ===========================
+   ANIMAÇÃO DOS CARDS
+=========================== */
+
+document
+.querySelectorAll(".card-dark")
+.forEach((card,index)=>{
+
+    card.style.opacity = 0;
+    card.style.transform =
+    "translateY(25px)";
+
+    setTimeout(()=>{
+
+        card.style.transition =
+        "all .6s ease";
+
+        card.style.opacity = 1;
+
+        card.style.transform =
+        "translateY(0)";
+
+    },index*150);
+
+});
+
+</script>
+
+</body>
+</html>

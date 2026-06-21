@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        PCMWeb - Gestão de Ativos
+    </title>
+
+    <!-- CSS -->
+
+   <link
+    rel="stylesheet"
+    href="gestaodeativos.css"
+    >
+
+    <!-- FONT AWESOME -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+</head>
+
+<body>
+        
+    <div class="app">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <img src="logopcmw.png">
+
+            </div>
+                        <nav class="menu">
+
+                <a class="menu-item" href="dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="tooltip">Dashboard Operacional</span>
+                </a>
+
+                <a class="menu-item active" href="gestaodeativos.html">
+                    <i class="fa-solid fa-industry"></i>
+                    <span class="tooltip">Gestao de Ativos</span>
+                </a>
+
+                <a class="menu-item" href="TelaOS.html">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span class="tooltip">Ordem de Servico</span>
+                </a>
+
+                <a class="menu-item" href="manutencao.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="tooltip">Plano Preventivo</span>
+                </a>
+
+                <a class="menu-item" href="Estoque.html">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <span class="tooltip">Gestao de Estoque</span>
+                </a>
+
+                <a class="menu-item" href="planejamento.html">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span class="tooltip">PCM</span>
+                </a>
+
+                <a class="menu-item" href="trainamento.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="tooltip">Treinamento</span>
+                </a>
+
+                <a class="menu-item" href="gestaocompras.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="tooltip">Compras</span>
+                </a>
+
+            </nav>
+
+            <div class="logout">
+                <div class="menu-item" onclick="logout()">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="tooltip">Sair</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <h1>
+                    Gestão de Ativos
+                </h1>
+
+                <button onclick="abrirModal()">
+
+                    + Adicionar Ativo
+
+                </button>
+
+            </header>
+
+            <section class="content-area">
+
+                <!-- CARD ESQUERDO -->
+
+                <div class="card">
+
+                    <input
+                        type="text"
+                        class="search"
+                        placeholder="Buscar ativo..."
+                    >
+
+                    <div class="tree">
+
+                        <ul>
+
+                            <li>
+
+                                <strong>
+                                    Planta Metalúrgica
+                                </strong>
+
+                                <ul>
+
+                                    <li>
+
+                                        <strong>
+                                            Fundição
+                                        </strong>
+
+                                        <ul>
+
+                                            <li>
+
+                                                <span class="selected">
+                                                    Forno de Fusão
+                                                </span>
+
+                                            </li>
+
+                                            <li>
+                                                Sensor Temperatura
+                                            </li>
+
+                                            <li>
+                                                Motor Principal
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD DIREITO -->
+
+                <div class="card">
+
+                    <div class="tabs">
+
+                        <div
+                            class="tab active"
+                            onclick="mostrarDados()"
+                        >
+                            Dados Gerais
+                        </div>
+
+                        <div
+                            class="tab"
+                            onclick="mostrarComponentes()"
+                        >
+                            Componentes
+                        </div>
+
+                        <div
+                            class="tab"
+                            onclick="mostrarDocumentos()"
+                        >
+                            Documentos
+                        </div>
+
+                    </div>
+
+                    <div id="conteudo">
+
+                        <table>
+
+                            <tr>
+                                <th>Campo</th>
+                                <th>Informação</th>
+                            </tr>
+
+                            <tr>
+                                <td>Código</td>
+                                <td>EQ-001</td>
+                            </tr>
+
+                            <tr>
+                                <td>Setor</td>
+                                <td>Fundição</td>
+                            </tr>
+
+                            <tr>
+                                <td>Criticidade</td>
+                                <td>Alta</td>
+                            </tr>
+
+                            <tr>
+                                <td>Fabricante</td>
+                                <td>Metalúrgica Brasil</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- MODAL -->
+
+    <div
+        class="modal"
+        id="modal"
+    >
+
+        <div class="modal-box">
+
+            <h2>
+                Novo Ativo
+            </h2>
+
+            <input
+                type="text"
+                id="nomeAtivo"
+                placeholder="Nome do ativo"
+            >
+
+            <input
+                type="text"
+                id="codigoAtivo"
+                placeholder="Código do ativo"
+            >
+
+            <div class="modal-buttons">
+
+                <button
+                    class="cancel-btn"
+                    onclick="fecharModal()"
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    class="save-btn"
+                    onclick="salvarAtivo()"
+                >
+                    Salvar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="gestaodeativos.js"></script>
+
+
+</body>
+
+</html>
