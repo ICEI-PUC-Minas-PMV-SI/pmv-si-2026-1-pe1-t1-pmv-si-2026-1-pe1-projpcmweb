@@ -9,7 +9,7 @@
 Site: https://pcmwweb.com/
 
 Login: integrante (ex: vitor)
-Senha: 1234
+`Senha:1234
 
 O projeto consiste no desenvolvimento de um sistema web completo voltado para a gestão empresarial, integrando diferentes áreas como compras, estoque, fornecedores, financeiro e controle de manutenção. A proposta é criar uma aplicação que permita centralizar informações e processos, facilitando o acompanhamento das atividades da empresa, desde o cadastro de produtos e controle de insumos até a geração de ordens de serviço e gestão de recursos financeiros.
 
