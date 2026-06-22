@@ -1,47 +1,120 @@
 # Apresentação
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+Nesta pasta estão armazenados os materiais referentes à apresentação final do projeto **PCM Web**, desenvolvido na disciplina Projeto Web do curso de Sistemas de Informação da PUC Minas.
 
-Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo neste arquivo Readme.md.
+O PCM Web é uma solução voltada para o gerenciamento de manutenção industrial, permitindo o controle de ativos, manutenção preventiva, ordens de serviço, estoque de peças, compras e treinamentos. O sistema foi desenvolvido para substituir controles manuais e planilhas, centralizando as informações em um ambiente digital e facilitando a gestão das operações de manutenção.
+
+## Arquivos da Apresentação
+
+| Arquivo                | Localização   | Descrição                                                                                                                                                     |
+| ---------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pitch Inicial.pdf      | /presentation | Apresentação inicial contendo a definição do problema, objetivos, público-alvo e proposta da solução.                                                         |
+| Apresentação Final.pdf | /presentation | Apresentação final contendo todas as etapas do desenvolvimento do projeto, requisitos, interfaces desenvolvidas, tecnologias utilizadas e resultados obtidos. |
+| Video Demonstracao.mp4 | /presentation | Vídeo demonstrativo do funcionamento do sistema PCM Web, apresentando as principais funcionalidades implementadas. *(Em desenvolvimento)*                     |
+
+---
+
+# Estrutura da Apresentação Final
+
+## 1. Título do Projeto
+
+* Nome: PCM Web
+* Curso: Sistemas de Informação – PUC Minas
+* Equipe:
+
+  * Aline Cristina De Castro Luna
+  * Davi Augusto Silva Chaves
+  * João Francisco Giovannini de Almeida Cunha
+  * Vivian Nascimento Silva Amorim
+  * Vitor Gabriel Nascimento Jerônimo
+  * Professor Tutor: Marco Rodrigo Costa
+
+## 2. Introdução
+
+Apresentação do contexto industrial e da importância do controle de manutenção de máquinas e equipamentos para garantir a continuidade operacional e reduzir falhas produtivas.
+
+## 3. Problema
+
+Demonstrar as dificuldades encontradas em empresas que realizam o controle da manutenção através de planilhas e registros manuais, gerando falta de organização, dificuldades de acompanhamento e riscos operacionais.
+
+## 4. Objetivos
+
+* Centralizar informações de manutenção.
+* Organizar ativos industriais.
+* Controlar manutenções preventivas.
+* Registrar ordens de serviço.
+* Melhorar a comunicação entre setores.
+* Disponibilizar informações em ambiente digital.
+
+## 5. Metodologia de Desenvolvimento
+
+* Levantamento de requisitos.
+* Definição dos perfis de usuários.
+* Construção dos protótipos.
+* Desenvolvimento das telas.
+* Versionamento utilizando GitHub.
+* Gestão das tarefas utilizando Trello.
+* Comunicação através do Microsoft Teams e WhatsApp.
+
+## 6. Identidade Visual
+
+Apresentação da identidade visual do sistema:
+
+* Logo PCM Web.
+* Paleta de cores.
+* Tipografia Arial.
+* Ícones desenvolvidos com Font Awesome.
+* Sidebar e Topbar padronizadas.
+
+## 7. Principais Telas Desenvolvidas
+
+* Login
+* Dashboard
+* Gestão de Ativos
+* Ordem de Serviço
+* Manutenção Preventiva
+* PCM
+* Gestão de Estoque
+* Compras
+* Treinamentos
+
+## 8. Tecnologias Utilizadas
+
+* HTML5
+* CSS3
+* JavaScript
+* Local Storage
+* GitHub
+* Figma
+* Trello
+
+## 9. Resultados Obtidos
+
+* Estrutura estática funcional.
+* Interfaces padronizadas.
+* Navegação entre telas.
+* Cadastro e visualização de informações.
+* Organização dos módulos de manutenção industrial.
 
 
-* [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
-* [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
-* [Vídeo de demonstração](./sample-video.mp4) -- arquivo com a demonstração do funcionamento do sistema
+## 10. Demonstração do Sistema
 
-O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
+Apresentação prática das principais telas e fluxos desenvolvidos.
 
-## Título do Projeto
+---
 
-Nome e marca do projeto
+# Vídeo de Demonstração
 
-## Identidade Visual (Marca, Design)
+O vídeo de demonstração será gravado após a conclusão das funcionalidades finais do sistema.
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+O vídeo deverá conter:
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+1. Apresentação do problema.
+2. Objetivos do projeto.
+3. Navegação pelas telas desenvolvidas.
+4. Demonstração das funcionalidades principais.
+5. Considerações finais.
 
-## Conjunto de Slides (Estrutura)
+Tempo estimado: até 5 minutos.
 
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos. Os arquivos devem ser postados na pasta [presentation](../presentation)
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
-
-## Vídeo de demonstração
-
-O grupo deverá gravar um vídeo de demonstração do site desenvolvido.
-
-> **Algumas informações úteis**
-> - O vídeo deve se limitar a 5 minutos e deve apresentar os objetivos do projeto antes de mostrar o sistema desenvolvido.
-> - O vídeo deve possuir uma narração que explica o que está sendo apresentado.
-> - Foque nas principais tarefas que o seu sistema desenvolveu. Não é necessário apresentar cada detalhe implementado.
-> - Não é necessário que todos os integrantes do grupo participem da gravação.
-> - Não é necessário que a face de algum integrante do grupo apareça na gravação.
-> - Uma ótima ferramenta open-source para gravação de vídeos é o [OBS](https://obsproject.com/pt-br/download)
-
+Ferramenta gravação: OBS Studio.
